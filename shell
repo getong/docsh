@@ -1,0 +1,2 @@
+#!/bin/sh
+./rebar3 shell --sname docsh
