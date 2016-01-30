@@ -1,0 +1,622 @@
+module 'docsh_rt' ['h0'/1,
+		   'h2'/1,
+		   'module_info'/0,
+		   'module_info'/1]
+attributes []
+
+'h0'/1 =
+    %% Line 14
+    fun (_cor0) ->
+	let <_fol5> = 'h'/1
+	in  ( let <_cor8> =
+		  %% Line 30
+		  ( try
+			( let <_cor2> =
+			      %% Line 31
+			      ( call _cor0:( '__docs'
+					     -| ['compiler_generated'] )
+				    ()
+				-| ['compiler_generated'] )
+			  in  %% Line 41
+			      ( case <_fol5,( _cor2
+					      -| ['compiler_generated'] )> of
+				  ( <_fol1,( {( 'elixir_docs_v1'
+						-| ['compiler_generated'] ),( Docs
+									      -| ['compiler_generated'] )}
+					     -| ['compiler_generated'] )> when ( 'true'
+										 -| ['compiler_generated'] ) ->
+					%% Line 42
+					( apply _fol1
+					      (( Docs
+						 -| ['compiler_generated'] ))
+					  -| ['compiler_generated'] )
+				    -| ['compiler_generated'] )
+				  %% Line 43
+				  ( <( _cor4
+				       -| ['compiler_generated'] ),( _cor5
+								     -| ['compiler_generated'] )> when ( 'true'
+													 -| ['compiler_generated'] ) ->
+					%% Line 44
+					( #{#<68>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<99>(8,1,'integer',['unsigned'|['big']]),
+					    #<117>(8,1,'integer',['unsigned'|['big']]),
+					    #<109>(8,1,'integer',['unsigned'|['big']]),
+					    #<101>(8,1,'integer',['unsigned'|['big']]),
+					    #<110>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<97>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<105>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<110>(8,1,'integer',['unsigned'|['big']]),
+					    #<32>(8,1,'integer',['unsigned'|['big']]),
+					    #<102>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<114>(8,1,'integer',['unsigned'|['big']]),
+					    #<109>(8,1,'integer',['unsigned'|['big']]),
+					    #<97>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<32>(8,1,'integer',['unsigned'|['big']]),
+					    #<110>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<32>(8,1,'integer',['unsigned'|['big']]),
+					    #<115>(8,1,'integer',['unsigned'|['big']]),
+					    #<117>(8,1,'integer',['unsigned'|['big']]),
+					    #<112>(8,1,'integer',['unsigned'|['big']]),
+					    #<112>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<114>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<101>(8,1,'integer',['unsigned'|['big']]),
+					    #<100>(8,1,'integer',['unsigned'|['big']])}#
+					  -| ['compiler_generated'] )
+				    -| ['compiler_generated'] )
+				end
+				-| ['compiler_generated'] )
+			  -| ['compiler_generated'] )
+		    of <( _cor3
+			  -| ['compiler_generated'] )> ->
+			( _cor3
+			  -| ['compiler_generated'] )
+		    catch <( _cor6
+			     -| ['compiler_generated'] ),( _cor5
+							   -| ['compiler_generated'] ),( _cor4
+											 -| ['compiler_generated'] )> ->
+			( case ( <( _cor6
+				    -| ['compiler_generated'] ),( _cor5
+								  -| ['compiler_generated'] ),( _cor4
+												-| ['compiler_generated'] )>
+				 -| ['compiler_generated'] ) of
+			    %% Line 33
+			    ( <( 'error'
+				 -| ['compiler_generated'] ),( 'undef'
+							       -| ['compiler_generated'] ),( _cor12
+											     -| ['compiler_generated'] )> when ( 'true'
+																 -| ['compiler_generated'] ) ->
+				  %% Line 34
+				  ( #{#<77>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<100>(8,1,'integer',['unsigned'|['big']]),
+				      #<117>(8,1,'integer',['unsigned'|['big']]),
+				      #<108>(8,1,'integer',['unsigned'|['big']]),
+				      #<101>(8,1,'integer',['unsigned'|['big']]),
+				      #<32>(8,1,'integer',['unsigned'|['big']]),
+				      #<100>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<99>(8,1,'integer',['unsigned'|['big']]),
+				      #<117>(8,1,'integer',['unsigned'|['big']]),
+				      #<109>(8,1,'integer',['unsigned'|['big']]),
+				      #<101>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<116>(8,1,'integer',['unsigned'|['big']]),
+				      #<97>(8,1,'integer',['unsigned'|['big']]),
+				      #<116>(8,1,'integer',['unsigned'|['big']]),
+				      #<105>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<32>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<116>(8,1,'integer',['unsigned'|['big']]),
+				      #<32>(8,1,'integer',['unsigned'|['big']]),
+				      #<102>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<117>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<100>(8,1,'integer',['unsigned'|['big']])}#
+				    -| ['compiler_generated'] )
+			      -| ['compiler_generated'] )
+			    %% Line 35
+			    ( <( E
+				 -| ['compiler_generated'] ),( R
+							       -| ['compiler_generated'] ),( _cor13
+											     -| ['compiler_generated'] )> when ( 'true'
+																 -| ['compiler_generated'] ) ->
+				  ( let <_cor7> =
+					%% Line 37
+					( call ( 'io_lib'
+						 -| ['compiler_generated'] ):( 'format'
+									       -| ['compiler_generated'] )
+					      (( [126|[112|[58|[126|[112]]]]]
+						 -| ['compiler_generated'] ), ( [( E
+										   -| ['compiler_generated'] )|( [( R
+														    -| ['compiler_generated'] )|( []
+																		  -| ['compiler_generated'] )]
+														 -| ['compiler_generated'] )]
+										-| ['compiler_generated'] ))
+					  -| ['compiler_generated'] )
+				    in  %% Line 36
+					( call ( 'erlang'
+						 -| ['compiler_generated'] ):( 'iolist_to_binary'
+									       -| ['compiler_generated'] )
+					      (( [( #{#<73>(8,1,'integer',['unsigned'|['big']]),
+						      #<110>(8,1,'integer',['unsigned'|['big']]),
+						      #<116>(8,1,'integer',['unsigned'|['big']]),
+						      #<101>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<110>(8,1,'integer',['unsigned'|['big']]),
+						      #<97>(8,1,'integer',['unsigned'|['big']]),
+						      #<108>(8,1,'integer',['unsigned'|['big']]),
+						      #<32>(8,1,'integer',['unsigned'|['big']]),
+						      #<101>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<111>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<58>(8,1,'integer',['unsigned'|['big']]),
+						      #<32>(8,1,'integer',['unsigned'|['big']])}#
+						    -| ['compiler_generated'] )|%% Line 37
+										( [( _cor7
+										     -| ['compiler_generated'] )|( []
+														   -| ['compiler_generated'] )]
+										  -| ['compiler_generated'] )]
+						 -| ['compiler_generated'] ))
+					  -| ['compiler_generated'] )
+				    -| ['compiler_generated'] )
+			      -| ['compiler_generated'] )
+			  end
+			  -| ['compiler_generated'] )
+		    -| ['compiler_generated'] )
+	      in  %% Line 39
+		  ( call ( 'io'
+			   -| ['compiler_generated'] ):( 'format'
+							 -| ['compiler_generated'] )
+			(( [126|[115|[126|[110]]]]
+			   -| ['compiler_generated'] ), ( [( _cor8
+							     -| ['compiler_generated'] )|( []
+											   -| ['compiler_generated'] )]
+							  -| ['compiler_generated'] ))
+		    -| ['compiler_generated'] )
+	      -| ['compiler_generated'] )
+
+'h2'/1 =
+    %% Line 16
+    fun (_cor0) ->
+	let <_fol11> = 'h'/3
+	in  ( let <_cor8> =
+		  %% Line 30
+		  ( try
+			( let <_cor2> =
+			      %% Line 31
+			      ( call _cor0:( '__docs'
+					     -| ['compiler_generated'] )
+				    ()
+				-| ['compiler_generated'] )
+			  in  %% Line 41
+			      ( case <_fol11,( _cor2
+					       -| ['compiler_generated'] )> of
+				  ( <_fol7,( {( 'elixir_docs_v1'
+						-| ['compiler_generated'] ),( Docs
+									      -| ['compiler_generated'] )}
+					     -| ['compiler_generated'] )> when ( 'true'
+										 -| ['compiler_generated'] ) ->
+					%% Line 42
+					( apply _fol7
+					      (( Docs
+						 -| ['compiler_generated'] ))
+					  -| ['compiler_generated'] )
+				    -| ['compiler_generated'] )
+				  %% Line 43
+				  ( <( _cor4
+				       -| ['compiler_generated'] ),( _cor5
+								     -| ['compiler_generated'] )> when ( 'true'
+													 -| ['compiler_generated'] ) ->
+					%% Line 44
+					( #{#<68>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<99>(8,1,'integer',['unsigned'|['big']]),
+					    #<117>(8,1,'integer',['unsigned'|['big']]),
+					    #<109>(8,1,'integer',['unsigned'|['big']]),
+					    #<101>(8,1,'integer',['unsigned'|['big']]),
+					    #<110>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<97>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<105>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<110>(8,1,'integer',['unsigned'|['big']]),
+					    #<32>(8,1,'integer',['unsigned'|['big']]),
+					    #<102>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<114>(8,1,'integer',['unsigned'|['big']]),
+					    #<109>(8,1,'integer',['unsigned'|['big']]),
+					    #<97>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<32>(8,1,'integer',['unsigned'|['big']]),
+					    #<110>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<32>(8,1,'integer',['unsigned'|['big']]),
+					    #<115>(8,1,'integer',['unsigned'|['big']]),
+					    #<117>(8,1,'integer',['unsigned'|['big']]),
+					    #<112>(8,1,'integer',['unsigned'|['big']]),
+					    #<112>(8,1,'integer',['unsigned'|['big']]),
+					    #<111>(8,1,'integer',['unsigned'|['big']]),
+					    #<114>(8,1,'integer',['unsigned'|['big']]),
+					    #<116>(8,1,'integer',['unsigned'|['big']]),
+					    #<101>(8,1,'integer',['unsigned'|['big']]),
+					    #<100>(8,1,'integer',['unsigned'|['big']])}#
+					  -| ['compiler_generated'] )
+				    -| ['compiler_generated'] )
+				end
+				-| ['compiler_generated'] )
+			  -| ['compiler_generated'] )
+		    of <( _cor3
+			  -| ['compiler_generated'] )> ->
+			( _cor3
+			  -| ['compiler_generated'] )
+		    catch <( _cor6
+			     -| ['compiler_generated'] ),( _cor5
+							   -| ['compiler_generated'] ),( _cor4
+											 -| ['compiler_generated'] )> ->
+			( case ( <( _cor6
+				    -| ['compiler_generated'] ),( _cor5
+								  -| ['compiler_generated'] ),( _cor4
+												-| ['compiler_generated'] )>
+				 -| ['compiler_generated'] ) of
+			    %% Line 33
+			    ( <( 'error'
+				 -| ['compiler_generated'] ),( 'undef'
+							       -| ['compiler_generated'] ),( _cor12
+											     -| ['compiler_generated'] )> when ( 'true'
+																 -| ['compiler_generated'] ) ->
+				  %% Line 34
+				  ( #{#<77>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<100>(8,1,'integer',['unsigned'|['big']]),
+				      #<117>(8,1,'integer',['unsigned'|['big']]),
+				      #<108>(8,1,'integer',['unsigned'|['big']]),
+				      #<101>(8,1,'integer',['unsigned'|['big']]),
+				      #<32>(8,1,'integer',['unsigned'|['big']]),
+				      #<100>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<99>(8,1,'integer',['unsigned'|['big']]),
+				      #<117>(8,1,'integer',['unsigned'|['big']]),
+				      #<109>(8,1,'integer',['unsigned'|['big']]),
+				      #<101>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<116>(8,1,'integer',['unsigned'|['big']]),
+				      #<97>(8,1,'integer',['unsigned'|['big']]),
+				      #<116>(8,1,'integer',['unsigned'|['big']]),
+				      #<105>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<32>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<116>(8,1,'integer',['unsigned'|['big']]),
+				      #<32>(8,1,'integer',['unsigned'|['big']]),
+				      #<102>(8,1,'integer',['unsigned'|['big']]),
+				      #<111>(8,1,'integer',['unsigned'|['big']]),
+				      #<117>(8,1,'integer',['unsigned'|['big']]),
+				      #<110>(8,1,'integer',['unsigned'|['big']]),
+				      #<100>(8,1,'integer',['unsigned'|['big']])}#
+				    -| ['compiler_generated'] )
+			      -| ['compiler_generated'] )
+			    %% Line 35
+			    ( <( E
+				 -| ['compiler_generated'] ),( R
+							       -| ['compiler_generated'] ),( _cor13
+											     -| ['compiler_generated'] )> when ( 'true'
+																 -| ['compiler_generated'] ) ->
+				  ( let <_cor7> =
+					%% Line 37
+					( call ( 'io_lib'
+						 -| ['compiler_generated'] ):( 'format'
+									       -| ['compiler_generated'] )
+					      (( [126|[112|[58|[126|[112]]]]]
+						 -| ['compiler_generated'] ), ( [( E
+										   -| ['compiler_generated'] )|( [( R
+														    -| ['compiler_generated'] )|( []
+																		  -| ['compiler_generated'] )]
+														 -| ['compiler_generated'] )]
+										-| ['compiler_generated'] ))
+					  -| ['compiler_generated'] )
+				    in  %% Line 36
+					( call ( 'erlang'
+						 -| ['compiler_generated'] ):( 'iolist_to_binary'
+									       -| ['compiler_generated'] )
+					      (( [( #{#<73>(8,1,'integer',['unsigned'|['big']]),
+						      #<110>(8,1,'integer',['unsigned'|['big']]),
+						      #<116>(8,1,'integer',['unsigned'|['big']]),
+						      #<101>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<110>(8,1,'integer',['unsigned'|['big']]),
+						      #<97>(8,1,'integer',['unsigned'|['big']]),
+						      #<108>(8,1,'integer',['unsigned'|['big']]),
+						      #<32>(8,1,'integer',['unsigned'|['big']]),
+						      #<101>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<111>(8,1,'integer',['unsigned'|['big']]),
+						      #<114>(8,1,'integer',['unsigned'|['big']]),
+						      #<58>(8,1,'integer',['unsigned'|['big']]),
+						      #<32>(8,1,'integer',['unsigned'|['big']])}#
+						    -| ['compiler_generated'] )|%% Line 37
+										( [( _cor7
+										     -| ['compiler_generated'] )|( []
+														   -| ['compiler_generated'] )]
+										  -| ['compiler_generated'] )]
+						 -| ['compiler_generated'] ))
+					  -| ['compiler_generated'] )
+				    -| ['compiler_generated'] )
+			      -| ['compiler_generated'] )
+			  end
+			  -| ['compiler_generated'] )
+		    -| ['compiler_generated'] )
+	      in  %% Line 39
+		  ( call ( 'io'
+			   -| ['compiler_generated'] ):( 'format'
+							 -| ['compiler_generated'] )
+			(( [126|[115|[126|[110]]]]
+			   -| ['compiler_generated'] ), ( [( _cor8
+							     -| ['compiler_generated'] )|( []
+											   -| ['compiler_generated'] )]
+							  -| ['compiler_generated'] ))
+		    -| ['compiler_generated'] )
+	      -| ['compiler_generated'] )
+'h'/1 =
+    %% Line 18
+    fun (_cor0) ->
+	%% Line 19
+	case call 'proplists':'get_value'
+		 ('moduledoc', _cor0) of
+	  <{_cor3,ModDoc}> when 'true' ->
+	      %% Line 20
+	      ModDoc
+	  ( <_cor1> when 'true' ->
+		primop 'match_fail'
+		    ({'badmatch',_cor1})
+	    -| ['compiler_generated'] )
+	end
+'h'/3 =
+    %% Line 22
+    fun (_cor2,_cor1,_cor0) ->
+	%% Line 23
+	case call 'lists':'keyfind'
+		 ('docs', 1, _cor2) of
+	  <{'docs',FunDocs}> when 'true' ->
+	      let <FA> = {_cor1,_cor0}
+	      in  %% Line 26
+		  case call 'lists':'keyfind'
+			   (FA, 1, FunDocs) of
+		    <{_cor9,_cor10,_cor11,_cor12,Doc}>
+			when call 'erlang':'=:='
+			      (_cor9,
+			       FA) ->
+			%% Line 27
+			Doc
+		    ( <_cor5> when 'true' ->
+			  primop 'match_fail'
+			      ({'badmatch',_cor5})
+		      -| ['compiler_generated'] )
+		  end
+	  ( <_cor3> when 'true' ->
+		primop 'match_fail'
+		    ({'badmatch',_cor3})
+	    -| ['compiler_generated'] )
+	end
+'guard_no_docs'/2 =
+    %% Line 29
+    fun (_cor1,_cor0) ->
+	let <_cor8> =
+	    %% Line 30
+	    try
+		let <_cor2> =
+		    %% Line 31
+		    call _cor1:'__docs'
+			()
+		in  %% Line 41
+		    ( case <_cor0,_cor2> of
+			( <_fol16,( {( 'elixir_docs_v1'
+				       -| ['compiler_generated'] ),( Docs
+								     -| ['compiler_generated'] )}
+				    -| ['compiler_generated'] )> when ( 'true'
+									-| ['compiler_generated'] ) ->
+			      %% Line 42
+			      ( apply _fol16
+				    (( Docs
+				       -| ['compiler_generated'] ))
+				-| ['compiler_generated'] )
+			  -| ['compiler_generated'] )
+			%% Line 43
+			( <( _cor4
+			     -| ['compiler_generated'] ),( _cor5
+							   -| ['compiler_generated'] )> when ( 'true'
+											       -| ['compiler_generated'] ) ->
+			      %% Line 44
+			      ( #{#<68>(8,1,'integer',['unsigned'|['big']]),
+				  #<111>(8,1,'integer',['unsigned'|['big']]),
+				  #<99>(8,1,'integer',['unsigned'|['big']]),
+				  #<117>(8,1,'integer',['unsigned'|['big']]),
+				  #<109>(8,1,'integer',['unsigned'|['big']]),
+				  #<101>(8,1,'integer',['unsigned'|['big']]),
+				  #<110>(8,1,'integer',['unsigned'|['big']]),
+				  #<116>(8,1,'integer',['unsigned'|['big']]),
+				  #<97>(8,1,'integer',['unsigned'|['big']]),
+				  #<116>(8,1,'integer',['unsigned'|['big']]),
+				  #<105>(8,1,'integer',['unsigned'|['big']]),
+				  #<111>(8,1,'integer',['unsigned'|['big']]),
+				  #<110>(8,1,'integer',['unsigned'|['big']]),
+				  #<32>(8,1,'integer',['unsigned'|['big']]),
+				  #<102>(8,1,'integer',['unsigned'|['big']]),
+				  #<111>(8,1,'integer',['unsigned'|['big']]),
+				  #<114>(8,1,'integer',['unsigned'|['big']]),
+				  #<109>(8,1,'integer',['unsigned'|['big']]),
+				  #<97>(8,1,'integer',['unsigned'|['big']]),
+				  #<116>(8,1,'integer',['unsigned'|['big']]),
+				  #<32>(8,1,'integer',['unsigned'|['big']]),
+				  #<110>(8,1,'integer',['unsigned'|['big']]),
+				  #<111>(8,1,'integer',['unsigned'|['big']]),
+				  #<116>(8,1,'integer',['unsigned'|['big']]),
+				  #<32>(8,1,'integer',['unsigned'|['big']]),
+				  #<115>(8,1,'integer',['unsigned'|['big']]),
+				  #<117>(8,1,'integer',['unsigned'|['big']]),
+				  #<112>(8,1,'integer',['unsigned'|['big']]),
+				  #<112>(8,1,'integer',['unsigned'|['big']]),
+				  #<111>(8,1,'integer',['unsigned'|['big']]),
+				  #<114>(8,1,'integer',['unsigned'|['big']]),
+				  #<116>(8,1,'integer',['unsigned'|['big']]),
+				  #<101>(8,1,'integer',['unsigned'|['big']]),
+				  #<100>(8,1,'integer',['unsigned'|['big']])}#
+				-| ['compiler_generated'] )
+			  -| ['compiler_generated'] )
+		      end
+		      -| ['compiler_generated'] )
+	    of <_cor3> ->
+		_cor3
+	    catch <_cor6,_cor5,_cor4> ->
+		case <_cor6,_cor5,_cor4> of
+		  %% Line 33
+		  <( 'error'
+		     -| ['compiler_generated'] ),( 'undef'
+						   -| ['compiler_generated'] ),_cor12> when 'true' ->
+		      %% Line 34
+		      #{#<77>(8,1,'integer',['unsigned'|['big']]),
+			#<111>(8,1,'integer',['unsigned'|['big']]),
+			#<100>(8,1,'integer',['unsigned'|['big']]),
+			#<117>(8,1,'integer',['unsigned'|['big']]),
+			#<108>(8,1,'integer',['unsigned'|['big']]),
+			#<101>(8,1,'integer',['unsigned'|['big']]),
+			#<32>(8,1,'integer',['unsigned'|['big']]),
+			#<100>(8,1,'integer',['unsigned'|['big']]),
+			#<111>(8,1,'integer',['unsigned'|['big']]),
+			#<99>(8,1,'integer',['unsigned'|['big']]),
+			#<117>(8,1,'integer',['unsigned'|['big']]),
+			#<109>(8,1,'integer',['unsigned'|['big']]),
+			#<101>(8,1,'integer',['unsigned'|['big']]),
+			#<110>(8,1,'integer',['unsigned'|['big']]),
+			#<116>(8,1,'integer',['unsigned'|['big']]),
+			#<97>(8,1,'integer',['unsigned'|['big']]),
+			#<116>(8,1,'integer',['unsigned'|['big']]),
+			#<105>(8,1,'integer',['unsigned'|['big']]),
+			#<111>(8,1,'integer',['unsigned'|['big']]),
+			#<110>(8,1,'integer',['unsigned'|['big']]),
+			#<32>(8,1,'integer',['unsigned'|['big']]),
+			#<110>(8,1,'integer',['unsigned'|['big']]),
+			#<111>(8,1,'integer',['unsigned'|['big']]),
+			#<116>(8,1,'integer',['unsigned'|['big']]),
+			#<32>(8,1,'integer',['unsigned'|['big']]),
+			#<102>(8,1,'integer',['unsigned'|['big']]),
+			#<111>(8,1,'integer',['unsigned'|['big']]),
+			#<117>(8,1,'integer',['unsigned'|['big']]),
+			#<110>(8,1,'integer',['unsigned'|['big']]),
+			#<100>(8,1,'integer',['unsigned'|['big']])}#
+		  %% Line 35
+		  <E,R,_cor13> when 'true' ->
+		      let <_cor7> =
+			  %% Line 37
+			  call 'io_lib':'format'
+			      ([126|[112|[58|[126|[112]]]]], [E|[R|[]]])
+		      in  %% Line 36
+			  call 'erlang':'iolist_to_binary'
+			      ([#{#<73>(8,1,'integer',['unsigned'|['big']]),
+				  #<110>(8,1,'integer',['unsigned'|['big']]),
+				  #<116>(8,1,'integer',['unsigned'|['big']]),
+				  #<101>(8,1,'integer',['unsigned'|['big']]),
+				  #<114>(8,1,'integer',['unsigned'|['big']]),
+				  #<110>(8,1,'integer',['unsigned'|['big']]),
+				  #<97>(8,1,'integer',['unsigned'|['big']]),
+				  #<108>(8,1,'integer',['unsigned'|['big']]),
+				  #<32>(8,1,'integer',['unsigned'|['big']]),
+				  #<101>(8,1,'integer',['unsigned'|['big']]),
+				  #<114>(8,1,'integer',['unsigned'|['big']]),
+				  #<114>(8,1,'integer',['unsigned'|['big']]),
+				  #<111>(8,1,'integer',['unsigned'|['big']]),
+				  #<114>(8,1,'integer',['unsigned'|['big']]),
+				  #<58>(8,1,'integer',['unsigned'|['big']]),
+				  #<32>(8,1,'integer',['unsigned'|['big']])}#|%% Line 37
+									      [_cor7|[]]])
+		end
+	in  %% Line 39
+	    call 'io':'format'
+		([126|[115|[126|[110]]]], [_cor8|[]])
+'guard_not_supported'/2 =
+    %% Line 41
+    fun (_cor1,_cor0) ->
+	case <_cor1,_cor0> of
+	  <Fun,{'elixir_docs_v1',Docs}> when 'true' ->
+	      %% Line 42
+	      apply Fun
+		  (Docs)
+	  %% Line 43
+	  <_cor4,_cor5> when 'true' ->
+	      %% Line 44
+	      #{#<68>(8,1,'integer',['unsigned'|['big']]),
+		#<111>(8,1,'integer',['unsigned'|['big']]),
+		#<99>(8,1,'integer',['unsigned'|['big']]),
+		#<117>(8,1,'integer',['unsigned'|['big']]),
+		#<109>(8,1,'integer',['unsigned'|['big']]),
+		#<101>(8,1,'integer',['unsigned'|['big']]),
+		#<110>(8,1,'integer',['unsigned'|['big']]),
+		#<116>(8,1,'integer',['unsigned'|['big']]),
+		#<97>(8,1,'integer',['unsigned'|['big']]),
+		#<116>(8,1,'integer',['unsigned'|['big']]),
+		#<105>(8,1,'integer',['unsigned'|['big']]),
+		#<111>(8,1,'integer',['unsigned'|['big']]),
+		#<110>(8,1,'integer',['unsigned'|['big']]),
+		#<32>(8,1,'integer',['unsigned'|['big']]),
+		#<102>(8,1,'integer',['unsigned'|['big']]),
+		#<111>(8,1,'integer',['unsigned'|['big']]),
+		#<114>(8,1,'integer',['unsigned'|['big']]),
+		#<109>(8,1,'integer',['unsigned'|['big']]),
+		#<97>(8,1,'integer',['unsigned'|['big']]),
+		#<116>(8,1,'integer',['unsigned'|['big']]),
+		#<32>(8,1,'integer',['unsigned'|['big']]),
+		#<110>(8,1,'integer',['unsigned'|['big']]),
+		#<111>(8,1,'integer',['unsigned'|['big']]),
+		#<116>(8,1,'integer',['unsigned'|['big']]),
+		#<32>(8,1,'integer',['unsigned'|['big']]),
+		#<115>(8,1,'integer',['unsigned'|['big']]),
+		#<117>(8,1,'integer',['unsigned'|['big']]),
+		#<112>(8,1,'integer',['unsigned'|['big']]),
+		#<112>(8,1,'integer',['unsigned'|['big']]),
+		#<111>(8,1,'integer',['unsigned'|['big']]),
+		#<114>(8,1,'integer',['unsigned'|['big']]),
+		#<116>(8,1,'integer',['unsigned'|['big']]),
+		#<101>(8,1,'integer',['unsigned'|['big']]),
+		#<100>(8,1,'integer',['unsigned'|['big']])}#
+	end
+'module_info'/0 =
+    ( fun () ->
+	  ( call ( 'erlang'
+		   -| ['compiler_generated'] ):( 'get_module_info'
+						 -| ['compiler_generated'] )
+		(( 'docsh_rt'
+		   -| ['compiler_generated'] ))
+	    -| ['compiler_generated'] )
+      -| ['compiler_generated'] )
+'module_info'/1 =
+    ( fun (( _cor0
+	     -| ['compiler_generated'] )) ->
+	  ( call ( 'erlang'
+		   -| ['compiler_generated'] ):( 'get_module_info'
+						 -| ['compiler_generated'] )
+		(( 'docsh_rt'
+		   -| ['compiler_generated'] ), ( _cor0
+						  -| ['compiler_generated'] ))
+	    -| ['compiler_generated'] )
+      -| ['compiler_generated'] )
+end
