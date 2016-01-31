@@ -100,19 +100,16 @@ module(Data, Attrs, _Parents, #xmlElement{name = module, content = Es}) ->
 
 types([], _Opts) -> [];
 types(Ts, Opts) ->
-    lists:flatmap(fun ({Name, E}) -> typedecl(Name, E, Opts) end, Ts).
+    lists:flatmap(fun ({Name, E}) ->
+                          try
+                              [?il2b(typedecl(Name, E, Opts))]
+                          catch
+                              _:_ -> typedecl(Name, E, Opts)
+                          end
+                  end, Ts).
 
-typedecl(Name, E=#xmlElement{content = Es}, Opts) ->
-    ([{h3, [{class, "typedecl"}], label_anchor([Name, "()"], E)}]
-     ++ [{p, typedef(get_content(typedef, Es), Opts)}]
-     ++ fulldesc(Es)).
-
-
-label_anchor(Content, E) ->
-    case get_attrval(label, E) of
-        "" -> Content;
-        Ref -> [{a, [{name, Ref}], Content}]
-    end.
+typedecl(_Name, #xmlElement{content = Es}, Opts) ->
+    typedef(get_content(typedef, Es), Opts) ++ fulldesc(Es).
 
 fulldesc(Es) ->
     case get_content(fullDescription, get_content(description, Es)) of
@@ -140,13 +137,13 @@ type_name(#xmlElement{content = Es}) ->
 t_name([E]) ->
     N = get_attrval(name, E),
     case get_attrval(module, E) of
-    "" -> atom(N);
-    M ->
-        S = atom(M) ++ ":" ++ atom(N),
-        case get_attrval(app, E) of
-        "" -> S;
-        A -> "//" ++ atom(A) ++ "/" ++ S
-        end
+        "" -> atom(N);
+        M ->
+            S = atom(M) ++ ":" ++ atom(N),
+            case get_attrval(app, E) of
+                "" -> S;
+                A -> "//" ++ atom(A) ++ "/" ++ S
+            end
     end.
 
 atom(String) ->
@@ -175,25 +172,22 @@ t_utype_elem(E=#xmlElement{content = Es}) ->
             end
     end.
 
-see(E=#xmlElement{content = Es}) ->
-    see(E, Es).
-
 see(E, Es) ->
     case href(E) of
-    [] -> Es;
-    Ref ->
-        [{a, Ref, Es}]
+        [] -> Es;
+        Ref ->
+            [{a, Ref, Es}]
     end.
 
 href(E) ->
     case get_attrval(href, E) of
-    "" -> [];
-    URI ->
-        T = case get_attrval(target, E) of
-            "" -> [];
-            S -> [{target, S}]
-        end,
-        [{href, URI} | T]
+        "" -> [];
+        URI ->
+            T = case get_attrval(target, E) of
+                    "" -> [];
+                    S -> [{target, S}]
+                end,
+            [{href, URI} | T]
     end.
 
 etypef(L, O0) ->
@@ -244,13 +238,11 @@ format_type(Prefix, Name, Type, Last, Opts) ->
         L = t_utype(Type),
         O = pp_type(Name, Type),
         {R, ".\n"} = etypef(L, O),
-        [{pre, Prefix ++ [" = "] ++ R ++ Last}]
+        [Prefix ++ [" :: "] ++ R ++ Last]
     catch _:_ ->
               %% Example: "t() = record(a)."
               format_type(Prefix, Name, Type, Last, Opts)
-    end;
-format_type(Prefix, _Name, Type, Last, _Opts) ->
-    [{tt, Prefix ++ [" = "] ++ t_utype(Type) ++ Last}].
+    end.
 
 pp_type(Prefix, Type) ->
     Atom = list_to_atom(lists:duplicate(iolist_size(Prefix), $a)),
@@ -527,9 +519,6 @@ t_abstype(Es) ->
 t_union(Es) ->
     seq(fun t_utype_elem/1, Es, " | ", []).
 
-seq(F, Es) ->
-    seq(F, Es, []).
-
 seq(F, Es, Tail) ->
     seq(F, Es, ", ", Tail).
 
@@ -554,7 +543,7 @@ local_defs(Es0, Last, Opts) ->
 localdef(E = #xmlElement{content = Es}, Last, Opts) ->
     Name = case get_elem(typevar, Es) of
                [] ->
-                   label_anchor(N0 = t_abstype(get_content(abstype, Es)), E);
+                   N0 = t_abstype(get_content(abstype, Es));
                [V] ->
                    N0 = t_var(V)
            end,
@@ -636,7 +625,6 @@ enumerate(List) ->
     lists:zip(lists:seq(1, length(List)), List).
 
 unwrap_fmt({fmt, Lines}) -> Lines;
-unwrap_fmt({fmt, []}) -> [];
 unwrap_fmt(_) -> [].
 
 collect_loose_text(Data) ->
